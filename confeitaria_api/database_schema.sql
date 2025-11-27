@@ -40,17 +40,24 @@ CREATE TABLE itens_pedido (
 );
 
 # INSERTS!!
--- Inserir PRODUTOS
 INSERT INTO produtos (nome, descricao, preco, categoria, img_url, estoque) VALUES
-('Bolo de Chocolate Belga', 'Bolo artesanal com chocolate belga premium', 89.90, 'bolo', 'https://exemplo.com/bolo-chocolate.jpg', 8),
-('Bolo de Morango com Ninho', 'Bolo com recheio de creme de ninho e morangos', 75.50, 'bolo', 'https://exemplo.com/bolo-morango.jpg', 12),
-('Brigadeiro Gourmet', 'Brigadeiro premium com chocolate 70%', 2.50, 'docinho', 'https://exemplo.com/brigadeiro.jpg', 50),
-('Beijinho de Coco', 'Docinho tradicional de coco queimado', 2.00, 'docinho', 'https://exemplo.com/beijinho.jpg', 45),
-('Cajuzinho', 'Docinho de amendoim com formato de caju', 2.00, 'docinho', 'https://exemplo.com/cajuzinho.jpg', 40),
-('Kit Festa Infantil', 'Kit completo para 20 crianças com bolo e doces', 299.90, 'kit', 'https://exemplo.com/kit-infantil.jpg', 5),
-('Kit Festa Adulto', 'Kit sofisticado para festas elegantes', 450.00, 'kit', 'https://exemplo.com/kit-adulto.jpg', 3),
-('Bolo Red Velvet', 'Bolo aveludado vermelho com cream cheese', 95.00, 'bolo', 'https://exemplo.com/red-velvet.jpg', 6),
-('Bolo de Cenoura', 'Bolo de cenoura com cobertura de chocolate', 65.00, 'bolo', 'https://exemplo.com/bolo-cenoura.jpg', 10);
+('Bolo de Chocolate', 'Bolo artesanal com chocolate belga premium', 89.90, 'bolo', 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80', 8),
+
+('Bolo de Morango', 'Bolo com recheio de creme de ninho e morangos frescos', 75.50, 'bolo', 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80', 12),
+
+('Brigadeiro Gourmet', 'Brigadeiro premium com chocolate 70% cacau', 2.50, 'docinho', 'https://www.receitasnestle.com.br/sites/default/files/srh_recipes/1a884bcbc5b04d71476d2995d51d0140.jpg', 50),
+
+('Beijinho de Coco', 'Docinho tradicional de coco queimado com cravo', 2.00, 'docinho', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpEzSPHejRuiwX8decKGUk6WWaxTo_EsjofQ&s', 45),
+
+('Cajuzinho', 'Docinho de amendoim com formato de caju e chocolate', 2.00, 'docinho', 'https://prodcontent.yoki.com.br/wp-content/uploads/2024/09/Cajuzinho-de-amendoim-800x450-1.jpg', 40),
+
+('Kit Festa 1', 'Kit completo para 20 crianças com bolo, doces e lembrancinhas', 299.90, 'kit', 'https://images.unsplash.com/photo-1535254973040-607b474cb50d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80', 5),
+
+('Kit Festa 2', 'Kit sofisticado para festas elegantes com produtos gourmet', 450.00, 'kit', 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80', 3),
+
+('Bolo Red Velvet', 'Bolo aveludado vermelho com cream cheese frosting', 95.00, 'bolo', 'https://www.receitasnestle.com.br/sites/default/files/srh_recipes/4f012df686c9759da04453742d8f3360.jpg', 6),
+
+('Bolo de Cenoura', 'Bolo de cenoura com cobertura de chocolate brigadeiro', 65.00, 'bolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_6t3pnttJqeazx6PDz81uaDR1JMPPXaVGA&s', 10);
 
 -- Inserir CLIENTES
 INSERT INTO clientes (nome, email, telefone) VALUES
@@ -58,6 +65,9 @@ INSERT INTO clientes (nome, email, telefone) VALUES
 ('Carlos Oliveira', 'carlos.oliveira@email.com', '(11) 99999-2222'),
 ('Mariana Santos', 'mariana.santos@email.com', '(11) 99999-3333'),
 ('João Pereira', 'joao.pereira@email.com', '(11) 99999-4444'),
+('Natasha Sales', 'natasha.sales@email.com', '(11) 99999-6666'),
+('Pedro Serradilha', 'pedro.enrico@email.com', '(11) 99999-7777'),
+('Maria Eduarda', 'maria.eduarda@email.com', '(11) 99999-8888'),
 ('Fernanda Lima', 'fernanda.lima@email.com', '(11) 99999-5555');
 
 -- Inserir PEDIDOS
@@ -82,3 +92,4 @@ INSERT INTO itens_pedido (pedido_id, produto_id, quantidade, preco_unitario) VAL
 
 -- Pedido 4 do João
 (4, 8, 1, 95.00);   -- Bolo Red Velvet
+
