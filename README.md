@@ -170,6 +170,9 @@ python app.py
 
 5. Testar a API:
 Acesse: http://localhost:5000/produtos
+http://localhost:5000/clientes
+http://localhost:5000/pedidos
+(sem um '/' da notfound 404 porque criamos as rotas só para o json.
 
 
 Documentação do Sistema de Confeitaria (Flutter) - Desenvolvimento Mobile
